@@ -6,6 +6,7 @@
 				Snap.load("img/icon.svg", function(f) {
 //Assign the white rectangle
                     whiteRect = f.select("#whiteRect");
+                    blueRect = f.select("#blueRect");
 //Assign the whole icon group
                     icon = f.select("#icon");
 //When the icon is hovered over, have the white rectangle move up slightly with elastic properties
@@ -13,11 +14,13 @@
                         icon.toggleClass('on');
                         if (icon.hasClass('on')) {
 						whiteRect.animate({y:960}, 500, mina.elastic);
-						whiteRect.animate({ fill: "#000000", stroke: "#686868" }, 150);
+						whiteRect.animate({ fill: "#FF0000", stroke: "#686868" }, 150);
+						blueRect.animate({ fill: "#0000FF", stroke: "#686868" }, 150);
                     }else{
                         //And return to original position when not hovered over
                         whiteRect.animate({y:977.36218}, 500, mina.elastic);
-                        whiteRect.animate({ fill: "#ff0000", stroke: "#686868" }, 150);
+                        whiteRect.animate({ fill: "#0000FF", stroke: "#686868" }, 150);
+                        blueRect.animate({ fill: "#FF0000", stroke: "#686868" }, 150);
                     }
 });
                     
