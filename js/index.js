@@ -5,13 +5,14 @@
 //Have Snap load the SVG file
 				Snap.load("img/poster_SVG.svg", function(f) {
 //Assign the var names
-                    happyBG = f.select("#happyBG");
-                    sadBG = f.select("#sadBG");
-                    lonelyBG = f.select("#lonelyBG");
+                    feelings = f.select("#feelings");
+                    happyBG = feelings.select("#happyBG");
+                    sadBG = feelings.select("#sadBG");
+                    lonelyBG = feelings.select("#lonelyBG");
 //Assign groups to var names
-                    happy = f.select("#happy");
-                    sad = f.select("#sad")
-                    lonely = f.select("#lonely")
+                    happy = feelings.select("#happy");
+                    sad = feelings.select("#sad")
+                    lonely = feelings.select("#lonely")
 //Happy 1,1
                     happy.click(function() {
                         happy.toggleClass('on');
