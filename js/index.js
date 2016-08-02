@@ -1,26 +1,31 @@
 //Run script right away
 			window.onload = function () {
 //We'll be appending the icon to this DIV later
-            	var s = Snap("#iconDiv");
+            	var s = Snap("#poster");
 //Have Snap load the SVG file
-				Snap.load("img/icon.svg", function(f) {
-//Assign the white rectangle
-                    whiteRect = f.select("#whiteRect");
-                    blueRect = f.select("#blueRect");
-//Assign the whole icon group
-                    icon = f.select("#icon");
-//When the icon is hovered over, have the white rectangle move up slightly with elastic properties
-                    icon.click(function() {
-                        icon.toggleClass('on');
-                        if (icon.hasClass('on')) {
-						whiteRect.animate({y:960}, 500, mina.elastic);
-						whiteRect.animate({ fill: "#FF0000", stroke: "#686868" }, 150);
-						blueRect.animate({ fill: "#0000FF", stroke: "#686868" }, 150);
+				Snap.load("img/poster_SVG.svg", function(f) {
+//Assign the var names
+                    happyBG = f.select("#happyBG");
+                    sadBG = f.select("#sadBG");
+//Assign groups to var names
+                    happy = f.select("#happy");
+                    sad = f.select("#sad")
+//Happy 1,1
+                    happy.click(function() {
+                        happy.toggleClass('on');
+                        if (happy.hasClass('on')) {
+						happyBG.animate({ fill: "#FFFF00", stroke: "#686868" }, 150);
                     }else{
-                        //And return to original position when not hovered over
-                        whiteRect.animate({y:977.36218}, 500, mina.elastic);
-                        whiteRect.animate({ fill: "#0000FF", stroke: "#686868" }, 150);
-                        blueRect.animate({ fill: "#FF0000", stroke: "#686868" }, 150);
+                        happyBG.animate({ fill: "#FFFFFF", stroke: "#686868" }, 150);
+                    }
+});
+//Sad 1,2
+                    sad.click(function() {
+                        sad.toggleClass('on');
+                        if (sad.hasClass('on')) {
+						sadBG.animate({ fill: "#0000FF", stroke: "#686868" }, 150);
+                    }else{
+                        sadBG.animate({ fill: "#FFFFFF", stroke: "#686868" }, 150);
                     }
 });
                     
