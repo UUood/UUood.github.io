@@ -60,12 +60,17 @@
                     peaceful = feelings.select("#peaceful");
                     excited = feelings.select("#excited");
                     tear = feelings.select("#tear");
+                    happySmile = feelings.select("#happySmile");
 
 
 //happy
 happy.click(function() {happy.toggleClass('on');
-                        if (happy.hasClass('on')) {happyBG.animate({ fill: "#FF6600", stroke: "#686868" }, 150);
-                    }else{happyBG.animate({ fill: "#FFFFFF", stroke: "#686868" }, 150);
+                        if (happy.hasClass('on')) {
+                            happySmile.animate({d:"m 107.87057,208.59938 c 3.87785,9.44073 12.0778,13.82677 18.78017,12.67891 16.25675,-2.78416 18.75997,-12.94535 18.75997,-12.94535"},150);
+                            happyBG.animate({ fill: "#FF6600", stroke: "#686868" }, 150);
+                    }else{
+                        happySmile.animate({d:"m 118.683,218.79651 c 1.30369,2.71688 2.46095,5.90922 7,5.86888 4.88472,-0.0434 6.69579,-3.18309 7.94754,-5.76495"},150);
+                        happyBG.animate({ fill: "#FFFFFF", stroke: "#686868" }, 150);
                     } });
 //sad
 sad.click(function() {sad.toggleClass('on');
