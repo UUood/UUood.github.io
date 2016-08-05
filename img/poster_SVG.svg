@@ -98,13 +98,16 @@
              style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><path
              id="path4243-1"
              d="m 141.44981,205.31575 c 0,0 4.66874,5.74602 9.98642,2.67585"
-             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><text
+             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+             
+             <text
              xml:space="preserve"
              style="font-style:normal;font-weight:normal;font-size:24.87771034px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              x="97.981544"
              y="257.33237"
              id="text4510"
-             transform="scale(0.91134932,1.0972741)"><tspan
+             transform="scale(0.91134932,1.0972741)">
+              <tspan
                id="tspan4512"
                x="97.981544"
                y="257.33237">Happy</tspan></text>
@@ -156,10 +159,24 @@
              style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><path
              id="path4241-7-4"
              d="m 275.79705,216.97347 c -0.97379,-2.01248 -4.10959,2.96804 -8.84506,-0.23671 -3.00193,-2.03157 -7.60176,-1.23126 -11.32845,-0.53105 -10.63391,1.99799 -7.2354,-1.67599 -7.2354,-1.67599"
-             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.6361987px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><path
+             style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.6361987px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+             <path
              style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.68188018px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              d="m 251.91375,189 c 0,0 -3.10456,3.4039 -0.94036,5.02645 2.70021,2.0244 2.9437,-3.16392 0.87498,-5.18898"
-             id="tear" /></g><g
+             id="tear" />
+             <text
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:24.87771034px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             x="150.981544"
+             y="257.33237"
+             id="sadText"
+             transform="scale(0.91134932,1.0972741)">
+              <tspan
+               id="tspan4512"
+               x="250.981544"
+               y="257.33237">Sad</tspan></text>
+             
+             </g><g
            id="lonely"><rect
              style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1"
              id="lonelyBG"
