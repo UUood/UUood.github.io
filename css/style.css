@@ -1,0 +1,42 @@
+html,
+body {
+	overflow: hidden;
+	background: #18212D;
+}
+
+body {
+  position: absolute;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  color: white;
+	font-family: 'Circular', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+section {
+	position: relative;
+	z-index: 1;
+	width: 18.5rem;
+}
+
+.poster {
+	opacity: 0;
+	position: relative;
+	margin-left: -3.5rem;
+	margin-top: -8rem;
+	margin-bottom: .75rem;
+	font-size: 8px;
+}
+
+.fireworks {
+  position: absolute;
+	top: 0;
+	left: 0;
+  width: 100%;
+  height: 100%;
+	cursor: pointer;
+}
