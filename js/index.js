@@ -4,7 +4,7 @@
             	var s = Snap("#poster");
 //Have Snap load the SVG file
 
-				Snap.load("img/poster_SVG.svg", function(f) {
+				Snap.load("img/poster_SVG_reg.svg", function(f) {
 //Assign the var names
                     feelings = f.select("#feelings");
                     happyBG = feelings.select("#happyBG");
@@ -69,6 +69,10 @@ happy.click(function() {happy.toggleClass('on');
                         if (happy.hasClass('on')) {
                             happySmile.animate({d:"m 107.87057,208.59938 c 3.87785,9.44073 12.0778,13.82677 18.78017,12.67891 16.25675,-2.78416 18.75997,-12.94535 18.75997,-12.94535"},150);
                             happyBG.animate({ fill: "#FF6600", stroke: "#686868" }, 150);
+                            HappyMojs();
+                            // 	var ElBbox = happyBG..getBoundingClientRect(),;
+                            
+                            	
                             
                             
                             
@@ -102,7 +106,9 @@ confident.click(function() {confident.toggleClass('on');
                     } });
 //joyful
 joyful.click(function() {joyful.toggleClass('on');
-                        if (joyful.hasClass('on')) {joyfulBG.animate({ fill: "#FF6600", stroke: "#686868" }, 150);
+                        if (joyful.hasClass('on')) {
+                            joyfulBG.animate({ fill: "#FF6600", stroke: "#686868" }, 150);
+                            JoyMojs();
                     }else{joyfulBG.animate({ fill: "#FFFFFF", stroke: "#686868" }, 150);
                     } });
 //discouraged
@@ -209,3 +215,97 @@ excited.click(function() {excited.toggleClass('on');
 				s.append(f);
 				});		     
 			};
+			
+			
+			
+			
+
+function HappyMojs (){
+    var ElBbox = document.getElementById("happyBG").getBoundingClientRect();
+	console.log(ElBbox);
+    var B1 = new mojs.Burst({
+        x: ((ElBbox.right - ElBbox.left) / 2) + ElBbox.left,
+        y: (ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top,
+        radius: {
+                0: ElBbox.right - ElBbox.left
+            }
+        });
+}
+
+
+function JoyMojs (){
+    var ElBbox = document.getElementById("joyfulBG").getBoundingClientRect();
+	console.log(ElBbox);
+
+moTimeline = new mojs.Timeline(),
+			moburst1 = new mojs.Burst({
+				// parent: molinkEl,
+				duration: 1300,
+				shape : 'circle',
+				fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
+				x: ((ElBbox.right - ElBbox.left) / 2) + ElBbox.left,
+				y: ((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)+(((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)*-.3),
+				radius: {0:60},
+				count: 6,
+				// isRunLess: true,
+				easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
+			})
+			,
+			moburst2 = new mojs.Burst({
+				// parent: molinkEl,
+				duration: 1600,
+				delay: 100,
+				shape : 'circle',
+				fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
+				x: (((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)+((((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)*-.7),
+				y: ((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)+(((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)*-.2),
+				radius: {0:80},
+				count: 14,
+				isRunLess: true,
+				easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
+			})
+			,
+			moburst3 = new mojs.Burst({
+				// parent: molinkEl,
+				duration: 1500,
+				delay: 200,
+				shape : 'circle',
+				fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
+				x: (((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)+((((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)*1),
+				y: ((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)+(((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)*-.2),
+				radius: {0:90},
+				count: 8,
+				isRunLess: true,
+				easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
+			}),
+			moburst4 = new mojs.Burst({
+				// parent: molinkEl,
+				duration: 2000,
+				delay: 300,
+				shape : 'circle',
+				fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
+				x: (((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)+((((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)*-.2),
+				y: ((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)+(((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)*-6),
+				radius: {0:60},
+				count: 14,
+				isRunLess: true,
+				easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
+			}),
+			moburst5 = new mojs.Burst({
+				// parent: molinkEl,
+				duration: 1400,
+				delay: 400,
+				shape : 'circle',
+				fill : [ '#988ADE', '#DE8AA0', '#8AAEDE', '#8ADEAD', '#DEC58A', '#8AD1DE' ],
+				x: (((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)+((((ElBbox.right - ElBbox.left) / 2) + ElBbox.left)*.3),
+				y: ((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)+(((ElBbox.bottom - ElBbox.top) / 2 + ElBbox.top)*-.4),
+				radius: {0:60},
+				count: 12,
+				isRunLess: true,
+				easing: mojs.easing.bezier(0.1, 1, 0.3, 1)
+			});
+
+		moTimeline.add(moburst1, moburst2, moburst3, moburst4, moburst5);
+		moTimeline.start();
+}
+ 
