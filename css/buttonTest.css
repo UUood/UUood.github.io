@@ -1,0 +1,560 @@
+/*body, html {*/
+/*  padding: 0;*/
+/*}*/
+
+/*body {*/
+/*  background: rgba(241, 226, 215, 0.2);*/
+  /*// background: #333;*/
+/*}*/
+
+.content {
+	max-width: 800px;
+	min-width: 800px;
+	margin: auto;
+}
+
+.grid__item {
+	position: relative;
+	float: left;
+	position: relative;
+	text-align: center;
+	background: #ff000;
+	/*background-color: Red;*/
+	/*margin: 0 0 5em;*/
+	width: 17%;
+	/*min-height: 15em;*/
+	display: -ms-flexbox;
+	-ms-flex-pack: center;
+	-ms-flex-align: center;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-align-content: center;
+	align-content: center;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+
+
+/*#buttontestbutton::before {*/
+
+
+/*	font-size: 1.5em;*/
+
+
+/*	font-stretch: expanded;*/
+
+
+/*	font-weight: bold;*/
+
+
+/*	line-height: 1;*/
+
+
+/*	position: absolute;*/
+
+
+/*	z-index: 0;*/
+
+
+/*	bottom: 0;*/
+
+
+/*	left: 0;*/
+
+
+/*	text-align: left;*/
+
+
+/*	color: #2b2929;*/
+
+
+/*	font-family: 'Patrick Hand SC', cursive;*/
+
+
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+
+
+/*	transform: translate3d(0.01em,50%,0)*/
+
+
+/*				scale3d(1,1,1);*/
+
+
+/*}*/
+
+#buttontestbutton {
+	background-color: Red;
+	position: relative;
+	z-index: 0;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	border-color: transparent;
+	margin: 0;
+	/*padding: 10px;*/
+}
+
+.happyOn {
+	background-color: #FF7F00;
+	/*opacity: 0.5;*/
+	/*position: relative;*/
+	/*z-index: -2;*/
+}
+
+.sadOn {
+	background-color: #9DABCC;
+	/*opacity: 0.5;*/
+	position: relative;
+	/*z-index: -2;*/
+}
+
+.disgustOn {
+	background-color: #8FB259;
+	position: relative;
+	/*z-index: -2;*/
+}
+
+.scaredOn {
+	background-color: #321840;
+	position: relative;
+}
+
+.angryOn {
+	background-color: #FF4D42;
+	position: relative;
+}
+.happyText::before{
+content:"Happy";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.sadText::before{
+content:"Sad";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.lonelyText::before{
+content:"Lonely";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.boredText::before{
+content:"Bored";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.confidentText::before{
+content:"Confident";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.joyfulText::before{
+content:"Joyful";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.discouragedText::before{
+content:"Discouraged";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.thoughtfulText::before{
+content:"Thoughtful";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.guiltyText::before{
+content:"Guilty";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.ashamedText::before{
+content:"Ashamed";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.proudText::before{
+content:"Proud";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.scaredText::before{
+content:"Scared";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.shyText::before{
+content:"Shy";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.lovedText::before{
+content:"Loved";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.sillyText::before{
+content:"Silly";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.angryText::before{
+content:"Angry";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.coolText::before{
+content:"Cool";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.frustratedText::before{
+content:"Frustrated";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.surprisedText::before{
+content:"Surprised";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.jealousText::before{
+content:"Jealous";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.overwhelmedText::before{
+content:"Overwhelmed";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(-.01em,80%,0)
+ scale3d(1,1,1);
+}
+.hurtText::before{
+content:"Hurt";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.confusedText::before{
+content:"Confused";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.peacefulText::before{
+content:"Peaceful";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+.excitedText::before{
+content:"Excited";
+font-size: 1.5em;
+font-stretch: expanded;
+font-weight: bold;
+line-height: 1;
+position: absolute;
+z-index: 0;
+bottom: 0;
+left: 0;
+text-align: left;
+color: #2b2929;
+font-family: 'Patrick Hand SC', cursive;
+/*-webkit-transform: translate3d(0.2em,50%,0);*/
+transform: translate3d(0.01em,80%,0)
+ scale3d(1,1,1);
+}
+
+
+svg {
+	position: relative;
+	z-index: -1;
+}
