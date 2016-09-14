@@ -1,5 +1,6 @@
 // JavaScript File
-function happyJS() {
+
+    document.getElementById("Happysvg").addEventListener("click", function happyJS() {
 	//outline objects
 	// document.querySelector(".content").style.border = "thick solid red";
 	// document.querySelector(".grid").style.border = "thick solid #0000FF";
@@ -15,7 +16,26 @@ function happyJS() {
 	HappyCall(classStatus);
 
 	// happyMojs();
-}
+});
+
+
+// function happyJS() {
+// 	//outline objects
+// 	// document.querySelector(".content").style.border = "thick solid red";
+// 	// document.querySelector(".grid").style.border = "thick solid #0000FF";
+// 	// document.querySelector(".grid__item").style.border = "thick solid green";
+// 	// document.querySelector("div").style.border = "thick solid brown";
+// 	// document.querySelector("#buttontestbutton").style.border = "thick solid purple";
+// 	// document.querySelector("svg").style.border = "thick solid black";
+
+// 	document.getElementById("Happysvg").classList.toggle("happyOn");
+// 	var divW = document.getElementById("Happysvg").getBoundingClientRect();
+// 	document.getElementById("I1").innerHTML = divW.top;
+// 	var classStatus = document.getElementById("Happysvg").className;
+// 	HappyCall(classStatus);
+
+// 	// happyMojs();
+// }
 
 
 
