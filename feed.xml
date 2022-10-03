@@ -3,10 +3,31 @@
     <title>UUoocl</title>
     <link href="https://uuood.github.io/uuoocl/feed.xml" rel="self" />
     <link href="https://uuood.github.io/uuoocl" />
-    <updated>1969-12-31T19:00:00-05:00</updated>
+    <updated>2022-10-03T17:46:04-04:00</updated>
     <author>
         <name>Jonathan</name>
     </author>
     <id>https://uuood.github.io/uuoocl</id>
 
+    <entry>
+        <title>Post 1</title>
+        <author>
+            <name>Jonathan</name>
+        </author>
+        <link href="https://uuood.github.io/uuoocl/post-1.html"/>
+        <id>https://uuood.github.io/uuoocl/post-1.html</id>
+
+        <updated>2022-10-03T17:46:04-04:00</updated>
+            <summary>
+                <![CDATA[
+                    #Hello
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>#Hello</p>
+
+            ]]>
+        </content>
+    </entry>
 </feed>
