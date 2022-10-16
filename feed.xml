@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>UUoocl</title>
-    <link href="https://uuood.github.io/uuoocl/feed.xml" rel="self" />
-    <link href="https://uuood.github.io/uuoocl" />
+    <link href="https://UUood.github.io/feed.xml" rel="self" />
+    <link href="https://UUood.github.io" />
     <updated>2022-10-03T17:46:04-04:00</updated>
     <author>
         <name>Jonathan</name>
     </author>
-    <id>https://uuood.github.io/uuoocl</id>
+    <id>https://UUood.github.io</id>
 
     <entry>
         <title>Post 1</title>
         <author>
             <name>Jonathan</name>
         </author>
-        <link href="https://uuood.github.io/uuoocl/post-1.html"/>
-        <id>https://uuood.github.io/uuoocl/post-1.html</id>
+        <link href="https://UUood.github.io/post-1.html"/>
+        <id>https://UUood.github.io/post-1.html</id>
 
         <updated>2022-10-03T17:46:04-04:00</updated>
             <summary>

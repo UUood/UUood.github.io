@@ -2,16 +2,16 @@
     "version": "https://jsonfeed.org/version/1",
     "title": "UUoocl",
     "description": "",
-    "home_page_url": "https://uuood.github.io/uuoocl",
-    "feed_url": "https://uuood.github.io/uuoocl/feed.json",
+    "home_page_url": "https://UUood.github.io",
+    "feed_url": "https://UUood.github.io/feed.json",
     "user_comment": "",
     "author": {
         "name": "Jonathan"
     },
     "items": [
         {
-            "id": "https://uuood.github.io/uuoocl/post-1.html",
-            "url": "https://uuood.github.io/uuoocl/post-1.html",
+            "id": "https://UUood.github.io/post-1.html",
+            "url": "https://UUood.github.io/post-1.html",
             "title": "Post 1",
             "summary": "#Hello",
             "content_html": "<p>#Hello</p>\n",
